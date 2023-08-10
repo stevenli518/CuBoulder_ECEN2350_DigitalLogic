@@ -1,0 +1,58 @@
+#! /usr/local/iverilog/bin/vvp
+:ivl_version "11.0 (devel)" "(s20150603-642-g3bdb50da)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 10;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "vhdl_textio";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0000000000fb6800 .scope module, "tb" "tb" 2 2;
+ .timescale -9 -10;
+v000000000109cdc0_0 .var "a", 0 0;
+v000000000109ce60_0 .var "b", 0 0;
+v0000000000f829b0_0 .net "c", 0 0, L_0000000000f82a50;  1 drivers
+S_0000000000fb6c60 .scope module, "U1" "my_and" 2 4, 3 1 0, S_0000000000fb6800;
+ .timescale -9 -10;
+    .port_info 0 /INPUT 1 "in1";
+    .port_info 1 /INPUT 1 "in2";
+    .port_info 2 /OUTPUT 1 "out1";
+L_0000000000f82a50 .functor AND 1, v000000000109cdc0_0, v000000000109ce60_0, C4<1>, C4<1>;
+v0000000000fb6990_0 .net "in1", 0 0, v000000000109cdc0_0;  1 drivers
+v0000000000fb6120_0 .net "in2", 0 0, v000000000109ce60_0;  1 drivers
+v0000000000fb64b0_0 .net "out1", 0 0, L_0000000000f82a50;  alias, 1 drivers
+    .scope S_0000000000fb6800;
+T_0 ;
+    %vpi_call 2 7 "$dumpfile", "output.vcd" {0 0 0};
+    %vpi_call 2 8 "$dumpvars" {0 0 0};
+    %vpi_call 2 9 "$display", "Starting simulation" {0 0 0};
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000000000109cdc0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000000000109ce60_0, 0, 1;
+    %delay 100, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000000000109cdc0_0, 0, 1;
+    %delay 100, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v000000000109ce60_0, 0, 1;
+    %delay 100, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v000000000109cdc0_0, 0, 1;
+    %delay 100, 0;
+    %vpi_call 2 15 "$display", "Simulation ended." {0 0 0};
+    %vpi_call 2 16 "$display", "Chengming Li" {0 0 0};
+    %vpi_call 2 17 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0000000000fb6800;
+T_1 ;
+    %vpi_call 2 20 "$monitor", $time, "a = %b,b = %b,c = %b", v000000000109cdc0_0, v000000000109ce60_0, v0000000000f829b0_0 {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb.v";
+    "my_and.v";

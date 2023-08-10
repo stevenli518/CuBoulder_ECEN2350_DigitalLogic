@@ -1,0 +1,108 @@
+$date
+	Tue Sep 29 21:52:16 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module tb_Unit2 $end
+$var wire 8 ! HEX0 [7:0] $end
+$var wire 8 " HEX2 [7:0] $end
+$var wire 8 # HEX4 [7:0] $end
+$var wire 10 $ LEDR [9:0] $end
+$var wire 8 % HEX5 [7:0] $end
+$var wire 8 & HEX3 [7:0] $end
+$var wire 8 ' HEX1 [7:0] $end
+$var reg 8 ( SW [7:0] $end
+$scope module Un2 $end
+$var wire 8 ) HEX0 [7:0] $end
+$var wire 8 * HEX2 [7:0] $end
+$var wire 8 + HEX4 [7:0] $end
+$var wire 8 , SW [7:0] $end
+$var wire 10 - LEDR [9:0] $end
+$var wire 8 . HEX5 [7:0] $end
+$var wire 8 / HEX3 [7:0] $end
+$var wire 8 0 HEX1 [7:0] $end
+$scope module EL $end
+$var wire 8 1 HEX0 [7:0] $end
+$var wire 8 2 HEX2 [7:0] $end
+$var wire 8 3 HEX4 [7:0] $end
+$var wire 8 4 SW [7:0] $end
+$var reg 8 5 HEX3 [7:0] $end
+$var reg 10 6 LEDR [9:0] $end
+$upscope $end
+$scope module H2_1 $end
+$var wire 4 7 birth [3:0] $end
+$var reg 8 8 HEX [7:0] $end
+$upscope $end
+$scope module H2_5 $end
+$var wire 4 9 birth [3:0] $end
+$var reg 8 : HEX [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11000000 :
+b0 9
+b11111001 8
+b1 7
+b1 6
+b11000111 5
+b1 4
+b11111111 3
+b11111111 2
+b11111111 1
+b11111001 0
+b11000111 /
+b11000000 .
+b1 -
+b1 ,
+b11111111 +
+b11111111 *
+b11111111 )
+b1 (
+b11111001 '
+b11000111 &
+b11000000 %
+b1 $
+b11111111 #
+b11111111 "
+b11111111 !
+$end
+#100
+b10001000 '
+b10001000 0
+b10001000 8
+b10001000 %
+b10001000 .
+b10001000 :
+b1010 7
+b1010 9
+b10000110 &
+b10000110 /
+b10000110 5
+b100 $
+b100 -
+b100 6
+b10101010 (
+b10101010 ,
+b10101010 4
+#200
+b11111001 '
+b11111001 0
+b11111001 8
+b1 7
+b11111111 &
+b11111111 /
+b11111111 5
+b10 $
+b10 -
+b10 6
+b10100001 (
+b10100001 ,
+b10100001 4
+#400

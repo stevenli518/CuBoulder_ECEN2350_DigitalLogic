@@ -1,0 +1,204 @@
+$date
+	Thu Sep 24 19:18:39 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module tb_Unit1 $end
+$var wire 10 ! LEDR [9:0] $end
+$var wire 8 " HEX5 [7:0] $end
+$var wire 8 # HEX4 [7:0] $end
+$var wire 8 $ HEX3 [7:0] $end
+$var wire 8 % HEX2 [7:0] $end
+$var wire 8 & HEX1 [7:0] $end
+$var wire 8 ' HEX0 [7:0] $end
+$var reg 2 ( KEY [1:0] $end
+$var reg 8 ) SW [7:0] $end
+$scope module U2 $end
+$var wire 2 * KEY [1:0] $end
+$var wire 24 + My_Birthday [23:0] $end
+$var wire 24 , My_mom_birthday [23:0] $end
+$var wire 8 - SW [7:0] $end
+$var wire 4 . birth [3:0] $end
+$var wire 10 / LEDR [9:0] $end
+$var wire 8 0 HEX5 [7:0] $end
+$var wire 8 1 HEX4 [7:0] $end
+$var wire 8 2 HEX3 [7:0] $end
+$var wire 8 3 HEX2 [7:0] $end
+$var wire 8 4 HEX1 [7:0] $end
+$var wire 8 5 HEX0 [7:0] $end
+$var wire 24 6 Birthday [23:0] $end
+$scope module U0 $end
+$var wire 2 7 KEY [1:0] $end
+$var wire 8 8 SW [7:0] $end
+$var reg 10 9 LEDR [9:0] $end
+$upscope $end
+$scope module U1 $end
+$var wire 2 : KEY [1:0] $end
+$var wire 24 ; My_Birthday [23:0] $end
+$var wire 24 < My_mom_birthday [23:0] $end
+$var wire 8 = HEX5 [7:0] $end
+$var wire 8 > HEX4 [7:0] $end
+$var wire 8 ? HEX3 [7:0] $end
+$var wire 8 @ HEX2 [7:0] $end
+$var wire 8 A HEX1 [7:0] $end
+$var wire 8 B HEX0 [7:0] $end
+$var reg 24 C Birthday [23:0] $end
+$scope module H0 $end
+$var wire 4 D birth [3:0] $end
+$var reg 8 E HEX [7:0] $end
+$upscope $end
+$scope module H1 $end
+$var wire 4 F birth [3:0] $end
+$var reg 8 G HEX [7:0] $end
+$upscope $end
+$scope module H2 $end
+$var wire 4 H birth [3:0] $end
+$var reg 8 I HEX [7:0] $end
+$upscope $end
+$scope module H3 $end
+$var wire 4 J birth [3:0] $end
+$var reg 8 K HEX [7:0] $end
+$upscope $end
+$scope module H4 $end
+$var wire 4 L birth [3:0] $end
+$var reg 8 M HEX [7:0] $end
+$upscope $end
+$scope module H5 $end
+$var wire 4 N birth [3:0] $end
+$var reg 8 O HEX [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11000000 O
+b0 N
+b10110000 M
+b11 L
+b11000000 K
+b0 J
+b11111001 I
+b1 H
+b11111000 G
+b111 F
+b11000000 E
+b0 D
+b110000000101110000 C
+b11000000 B
+b11111000 A
+b11111001 @
+b11000000 ?
+b10110000 >
+b11000000 =
+b110000000101110000 <
+b1010001100000000000 ;
+bx0 :
+b0 9
+b0 8
+bx0 7
+b110000000101110000 6
+b11000000 5
+b11111000 4
+b11111001 3
+b11000000 2
+b10110000 1
+b11000000 0
+b0 /
+bz .
+b0 -
+b110000000101110000 ,
+b1010001100000000000 +
+bx0 *
+b0 )
+bx0 (
+b11000000 '
+b11111000 &
+b11111001 %
+b11000000 $
+b10110000 #
+b11000000 "
+b0 !
+$end
+#100
+b11111111 !
+b11111111 /
+b11111111 9
+b11111111 )
+b11111111 -
+b11111111 8
+#200
+b0 )
+b0 -
+b0 8
+bx1 (
+bx1 *
+bx1 7
+bx1 :
+#300
+b0 !
+b0 /
+b0 9
+b11111111 )
+b11111111 -
+b11111111 8
+#600
+b10010010 #
+b10010010 1
+b10010010 >
+b10010010 M
+b11111001 $
+b11111001 2
+b11111001 ?
+b11111001 K
+b10000000 %
+b10000000 3
+b10000000 @
+b10000000 I
+b11000000 &
+b11000000 4
+b11000000 A
+b11000000 G
+b101 L
+b1 J
+b1000 H
+b0 F
+b1010001100000000000 6
+b1010001100000000000 C
+b11 (
+b11 *
+b11 7
+b11 :
+#800
+b10110000 #
+b10110000 1
+b10110000 >
+b10110000 M
+b11000000 $
+b11000000 2
+b11000000 ?
+b11000000 K
+b11111001 %
+b11111001 3
+b11111001 @
+b11111001 I
+b11111000 &
+b11111000 4
+b11111000 A
+b11111000 G
+b11 L
+b0 J
+b1 H
+b111 F
+b110000000101110000 6
+b110000000101110000 C
+b1 (
+b1 *
+b1 7
+b1 :
+#1000

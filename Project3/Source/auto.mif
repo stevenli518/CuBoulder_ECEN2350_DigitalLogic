@@ -1,0 +1,18 @@
+DEPTH = 8;  
+WIDTH = 8;  
+
+ADDRESS_RADIX = DEC; 
+DATA_RADIX = BIN; 
+
+CONTENT
+BEGIN
+% Brake, LR select, TS enable, Hazard %
+0 : 00000000; % IDLE No Brake %
+1 : 00000001; % IDLE Brake %
+2 : 00010010; % HAZARD %
+3 : 00000010; % LT No Brake %
+4 : 00010110; % LT Brake %
+5 : 00000110; % RT No Brake %
+6 : 00000000; % RT Brake %
+7 : 00000000; % Unassigned %
+END; 

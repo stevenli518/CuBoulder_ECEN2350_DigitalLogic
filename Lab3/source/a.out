@@ -1,0 +1,108 @@
+#! /usr/local/iverilog/bin/vvp
+:ivl_version "11.0 (devel)" "(s20150603-642-g3bdb50da)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision - 10;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "vhdl_textio";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0000000001007140 .scope module, "tb_Start" "tb_Start" 2 2;
+ .timescale -9 -10;
+v0000000001007fd0_0 .var "a", 0 0;
+v00000000010086b0_0 .var "b", 0 0;
+v00000000010078f0_0 .var "c", 0 0;
+v0000000001008110_0 .var "d", 0 0;
+v00000000010081b0_0 .var/i "i", 31 0;
+v0000000001008250_0 .var "result", 15 0;
+v0000000001012dc0_0 .net "x", 0 0, L_0000000001013310;  1 drivers
+S_000000000115d7b0 .scope module, "U0" "Start" 2 8, 3 1 0, S_0000000001007140;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a";
+    .port_info 1 /INPUT 1 "b";
+    .port_info 2 /INPUT 1 "c";
+    .port_info 3 /INPUT 1 "d";
+    .port_info 4 /OUTPUT 1 "x";
+L_0000000000fe3430 .functor NOT 1, v0000000001007fd0_0, C4<0>, C4<0>, C4<0>;
+L_0000000001005a00 .functor AND 1, L_0000000000fe3430, v00000000010086b0_0, C4<1>, C4<1>;
+L_0000000001005c40 .functor NOT 1, v00000000010078f0_0, C4<0>, C4<0>, C4<0>;
+L_000000000115da50 .functor AND 1, L_0000000001005a00, L_0000000001005c40, C4<1>, C4<1>;
+L_00000000010134d0 .functor AND 1, L_000000000115da50, v0000000001008110_0, C4<1>, C4<1>;
+L_0000000001013620 .functor NOT 1, v00000000010086b0_0, C4<0>, C4<0>, C4<0>;
+L_00000000010131c0 .functor AND 1, v0000000001007fd0_0, L_0000000001013620, C4<1>, C4<1>;
+L_0000000001013690 .functor AND 1, L_00000000010131c0, v00000000010078f0_0, C4<1>, C4<1>;
+L_00000000010133f0 .functor AND 1, L_0000000001013690, v0000000001008110_0, C4<1>, C4<1>;
+L_0000000001013700 .functor OR 1, L_00000000010134d0, L_00000000010133f0, C4<0>, C4<0>;
+L_0000000001013230 .functor AND 1, v0000000001007fd0_0, v00000000010086b0_0, C4<1>, C4<1>;
+L_0000000001013540 .functor NOT 1, v00000000010078f0_0, C4<0>, C4<0>, C4<0>;
+L_0000000001013150 .functor AND 1, L_0000000001013230, L_0000000001013540, C4<1>, C4<1>;
+L_00000000010135b0 .functor AND 1, L_0000000001013150, v0000000001008110_0, C4<1>, C4<1>;
+L_0000000001013310 .functor OR 1, L_0000000001013700, L_00000000010135b0, C4<0>, C4<0>;
+v0000000001007c10_0 .net *"_s0", 0 0, L_0000000000fe3430;  1 drivers
+v00000000010082f0_0 .net *"_s10", 0 0, L_0000000001013620;  1 drivers
+v0000000001007cb0_0 .net *"_s12", 0 0, L_00000000010131c0;  1 drivers
+v0000000001007b70_0 .net *"_s14", 0 0, L_0000000001013690;  1 drivers
+v0000000001008390_0 .net *"_s16", 0 0, L_00000000010133f0;  1 drivers
+v0000000001007990_0 .net *"_s18", 0 0, L_0000000001013700;  1 drivers
+v0000000001008070_0 .net *"_s2", 0 0, L_0000000001005a00;  1 drivers
+v0000000001007a30_0 .net *"_s20", 0 0, L_0000000001013230;  1 drivers
+v0000000001008430_0 .net *"_s22", 0 0, L_0000000001013540;  1 drivers
+v00000000010084d0_0 .net *"_s24", 0 0, L_0000000001013150;  1 drivers
+v0000000001007df0_0 .net *"_s26", 0 0, L_00000000010135b0;  1 drivers
+v00000000010077b0_0 .net *"_s4", 0 0, L_0000000001005c40;  1 drivers
+v0000000001007e90_0 .net *"_s6", 0 0, L_000000000115da50;  1 drivers
+v0000000001008610_0 .net *"_s8", 0 0, L_00000000010134d0;  1 drivers
+v0000000001007d50_0 .net "a", 0 0, v0000000001007fd0_0;  1 drivers
+v0000000001007ad0_0 .net "b", 0 0, v00000000010086b0_0;  1 drivers
+v0000000001007f30_0 .net "c", 0 0, v00000000010078f0_0;  1 drivers
+v0000000001008570_0 .net "d", 0 0, v0000000001008110_0;  1 drivers
+v0000000001007850_0 .net "x", 0 0, L_0000000001013310;  alias, 1 drivers
+    .scope S_0000000001007140;
+T_0 ;
+    %pushi/vec4 10272, 0, 16;
+    %store/vec4 v0000000001008250_0, 0, 16;
+    %end;
+    .thread T_0;
+    .scope S_0000000001007140;
+T_1 ;
+    %vpi_call 2 12 "$display", "Starting simulation....." {0 0 0};
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v00000000010081b0_0, 0, 32;
+T_1.0 ;
+    %load/vec4 v00000000010081b0_0;
+    %cmpi/s 15, 0, 32;
+    %flag_or 5, 4;
+    %jmp/0xz T_1.1, 5;
+    %load/vec4 v00000000010081b0_0;
+    %pad/s 4;
+    %split/vec4 1;
+    %store/vec4 v0000000001008110_0, 0, 1;
+    %split/vec4 1;
+    %store/vec4 v00000000010078f0_0, 0, 1;
+    %split/vec4 1;
+    %store/vec4 v00000000010086b0_0, 0, 1;
+    %store/vec4 v0000000001007fd0_0, 0, 1;
+    %delay 10, 0;
+    %load/vec4 v0000000001012dc0_0;
+    %load/vec4 v0000000001008250_0;
+    %load/vec4 v00000000010081b0_0;
+    %part/s 1;
+    %cmp/ne;
+    %jmp/0xz  T_1.2, 4;
+    %vpi_call 2 18 "$display", "Incorrect value for %h", v00000000010081b0_0 {0 0 0};
+T_1.2 ;
+    %delay 10, 0;
+    %load/vec4 v00000000010081b0_0;
+    %addi 1, 0, 32;
+    %store/vec4 v00000000010081b0_0, 0, 32;
+    %jmp T_1.0;
+T_1.1 ;
+    %vpi_call 2 21 "$display", "Chengming Li" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "tb_Start.v";
+    "Start.v";

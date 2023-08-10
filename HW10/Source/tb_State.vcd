@@ -1,0 +1,272 @@
+$date
+	Mon Nov 02 08:57:43 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module tb_State $end
+$var wire 4 ! NextState [3:0] $end
+$var wire 10 " LEDR [9:0] $end
+$var wire 4 # CurrentState [3:0] $end
+$var reg 1 $ clock $end
+$var reg 1 % reset_n $end
+$scope module CS $end
+$var wire 1 $ clock $end
+$var wire 1 % reset_n $end
+$var wire 4 & NextState [3:0] $end
+$var reg 4 ' CurrentState [3:0] $end
+$upscope $end
+$scope module NS $end
+$var wire 4 ( CurrentState [3:0] $end
+$var reg 4 ) NextState [3:0] $end
+$upscope $end
+$scope module O $end
+$var wire 4 * CurrentState [3:0] $end
+$var reg 10 + LEDR [9:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 +
+b0 *
+b1 )
+b0 (
+b0 '
+b1 &
+0%
+0$
+b0 #
+b0 "
+b1 !
+$end
+#100
+1$
+#200
+0$
+1%
+#300
+b10 !
+b10 &
+b10 )
+b1 "
+b1 +
+b1 #
+b1 '
+b1 (
+b1 *
+1$
+#400
+0$
+#500
+b10 "
+b10 +
+b11 !
+b11 &
+b11 )
+b10 #
+b10 '
+b10 (
+b10 *
+1$
+#600
+0$
+#700
+b100 !
+b100 &
+b100 )
+b11 "
+b11 +
+b11 #
+b11 '
+b11 (
+b11 *
+1$
+#800
+0$
+#900
+b101 "
+b101 +
+b101 !
+b101 &
+b101 )
+b100 #
+b100 '
+b100 (
+b100 *
+1$
+#1000
+0$
+#1100
+b110 !
+b110 &
+b110 )
+b1000 "
+b1000 +
+b101 #
+b101 '
+b101 (
+b101 *
+1$
+#1200
+0$
+#1300
+b1101 "
+b1101 +
+b111 !
+b111 &
+b111 )
+b110 #
+b110 '
+b110 (
+b110 *
+1$
+#1400
+0$
+#1500
+b1000 !
+b1000 &
+b1000 )
+b10101 "
+b10101 +
+b111 #
+b111 '
+b111 (
+b111 *
+1$
+#1600
+0$
+#1700
+b100010 "
+b100010 +
+b0 !
+b0 &
+b0 )
+b1000 #
+b1000 '
+b1000 (
+b1000 *
+1$
+#1800
+0$
+#1900
+b1 !
+b1 &
+b1 )
+b0 "
+b0 +
+b0 #
+b0 '
+b0 (
+b0 *
+1$
+#2000
+0$
+#2100
+b1 "
+b1 +
+b10 !
+b10 &
+b10 )
+b1 #
+b1 '
+b1 (
+b1 *
+1$
+#2200
+0$
+#2300
+b11 !
+b11 &
+b11 )
+b10 "
+b10 +
+b10 #
+b10 '
+b10 (
+b10 *
+1$
+#2400
+0$
+#2500
+b11 "
+b11 +
+b100 !
+b100 &
+b100 )
+b11 #
+b11 '
+b11 (
+b11 *
+1$
+#2600
+0$
+#2700
+b101 !
+b101 &
+b101 )
+b101 "
+b101 +
+b100 #
+b100 '
+b100 (
+b100 *
+1$
+#2800
+0$
+#2900
+b1000 "
+b1000 +
+b110 !
+b110 &
+b110 )
+b101 #
+b101 '
+b101 (
+b101 *
+1$
+#3000
+0$
+#3100
+b111 !
+b111 &
+b111 )
+b1101 "
+b1101 +
+b110 #
+b110 '
+b110 (
+b110 *
+1$
+#3200
+0$
+#3300
+b10101 "
+b10101 +
+b1000 !
+b1000 &
+b1000 )
+b111 #
+b111 '
+b111 (
+b111 *
+1$
+#3400
+b1 !
+b1 &
+b1 )
+b0 "
+b0 +
+b0 #
+b0 '
+b0 (
+b0 *
+0$
+0%
+#3500
+1$
+#3600
+0$

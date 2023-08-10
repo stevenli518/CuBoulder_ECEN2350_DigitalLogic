@@ -1,0 +1,45 @@
+$date
+	Sun Sep 20 12:52:53 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module tb_Unit1a $end
+$var wire 10 ! LEDR [9:0] $end
+$var reg 2 " KEY [1:0] $end
+$var reg 8 # SW [7:0] $end
+$scope module U0 $end
+$var wire 2 $ KEY [1:0] $end
+$var wire 8 % SW [7:0] $end
+$var reg 10 & LEDR [9:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 &
+b0 %
+bx0 $
+b0 #
+bx0 "
+b0 !
+$end
+#100
+b11111111 !
+b11111111 &
+b11111111 #
+b11111111 %
+#200
+b0 #
+b0 %
+bx1 "
+bx1 $
+#300
+b0 !
+b0 &
+b11111111 #
+b11111111 %
+#500

@@ -1,0 +1,108 @@
+$date
+	Thu Oct 15 16:48:02 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module tb_Unit1b $end
+$var wire 8 ! HEX5 [7:0] $end
+$var wire 8 " HEX4 [7:0] $end
+$var wire 8 # HEX3 [7:0] $end
+$var wire 8 $ HEX2 [7:0] $end
+$var wire 8 % HEX1 [7:0] $end
+$var wire 8 & HEX0 [7:0] $end
+$var reg 2 ' KEY [1:0] $end
+$scope module U0 $end
+$var wire 2 ( KEY [1:0] $end
+$var wire 24 ) My_Birthday [23:0] $end
+$var wire 24 * My_mom_birthday [23:0] $end
+$var wire 8 + HEX5 [7:0] $end
+$var wire 8 , HEX4 [7:0] $end
+$var wire 8 - HEX3 [7:0] $end
+$var wire 8 . HEX2 [7:0] $end
+$var wire 8 / HEX1 [7:0] $end
+$var wire 8 0 HEX0 [7:0] $end
+$var reg 24 1 Birthday [23:0] $end
+$scope module H0 $end
+$var wire 4 2 birth [3:0] $end
+$var reg 8 3 HEX [7:0] $end
+$upscope $end
+$scope module H1 $end
+$var wire 4 4 birth [3:0] $end
+$var reg 8 5 HEX [7:0] $end
+$upscope $end
+$scope module H2 $end
+$var wire 4 6 birth [3:0] $end
+$var reg 8 7 HEX [7:0] $end
+$upscope $end
+$scope module H3 $end
+$var wire 4 8 birth [3:0] $end
+$var reg 8 9 HEX [7:0] $end
+$upscope $end
+$scope module H4 $end
+$var wire 4 : birth [3:0] $end
+$var reg 8 ; HEX [7:0] $end
+$upscope $end
+$scope module H5 $end
+$var wire 4 < birth [3:0] $end
+$var reg 8 = HEX [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11000000 =
+b0 <
+b10010010 ;
+b101 :
+b11111001 9
+b1 8
+b10000000 7
+b1000 6
+b11000000 5
+b0 4
+b11000000 3
+b0 2
+b1010001100000000000 1
+b11000000 0
+b11000000 /
+b10000000 .
+b11111001 -
+b10010010 ,
+b11000000 +
+bz *
+bz )
+b1x (
+b1x '
+b11000000 &
+b11000000 %
+b10000000 $
+b11111001 #
+b10010010 "
+b11000000 !
+$end
+#200
+b10110000 "
+b10110000 ,
+b10110000 ;
+b11000000 #
+b11000000 -
+b11000000 9
+b11111001 $
+b11111001 .
+b11111001 7
+b11111000 %
+b11111000 /
+b11111000 5
+b11 :
+b0 8
+b1 6
+b111 4
+b110000000101110000 1
+b0x '
+b0x (
+#300

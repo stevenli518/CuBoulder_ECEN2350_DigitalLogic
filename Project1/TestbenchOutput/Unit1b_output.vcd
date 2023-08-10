@@ -1,0 +1,57 @@
+$date
+	Sun Sep 20 12:16:25 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module tb_Unit1b $end
+$var wire 8 ! HEX5 [7:0] $end
+$var wire 8 " HEX4 [7:0] $end
+$var wire 8 # HEX3 [7:0] $end
+$var wire 8 $ HEX2 [7:0] $end
+$var wire 8 % HEX1 [7:0] $end
+$var wire 8 & HEX0 [7:0] $end
+$var reg 2 ' KEY [1:0] $end
+$scope module U0 $end
+$var wire 2 ( KEY [1:0] $end
+$var reg 8 ) HEX0 [7:0] $end
+$var reg 8 * HEX1 [7:0] $end
+$var reg 8 + HEX2 [7:0] $end
+$var reg 8 , HEX3 [7:0] $end
+$var reg 8 - HEX4 [7:0] $end
+$var reg 8 . HEX5 [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b111111 .
+b1101101 -
+b110 ,
+b1111111 +
+b111111 *
+b111111 )
+b1x (
+b1x '
+b111111 &
+b111111 %
+b1111111 $
+b110 #
+b1101101 "
+b111111 !
+$end
+#200
+b111 %
+b111 *
+b110 $
+b110 +
+b111111 #
+b111111 ,
+b1001111 "
+b1001111 -
+b0x '
+b0x (
+#300
